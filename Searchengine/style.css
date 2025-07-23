@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.container
+{
+  width:100%;
+  min-height: 100vh;
+  padding:10%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242526;
+}
+
+.button-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.search-bar
+{
+  width: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  padding: 7px 8px;
+  height: 60px;
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.search-bar input
+{
+  background: transparent;
+  flex:1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color:#242526;  
+}
+
+::placeholder
+{
+  color:#242526;
+}
+
+.search-bar button img
+{
+  width: 20px;
+}
+
+.search-bar button
+{
+  width: 50px;
+  height: 50px;
+  background: #58629b;
+  cursor: pointer;
+  border: 0;
+  margin-top: -2px;
+  margin-right: -2px;
+}
+
+.frame-item {
+  position: absolute;
+  top: 144px;
+  left: calc(50% - 180.5px);
+  width: 300px;
+  height: 248px;
+  object-fit: cover;
+}
+
+#decearch {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 38px;
+  font-style:unset;
+  color: #ffffff;
+}
+
+.icon-linkedin
+{
+  position:relative;
+  top: 200px;
+  right:520px;
+  transform: scale(1.1);
+}
+
+.icon-google
+{
+  position:relative;
+  top: 150px;
+  right:370px;
+  transform: scale(1.1); 
+}
+
+.icon-youtube
+{
+  position:relative;
+  top: 100px;
+  right:445px;
+  transform: scale(1.1); 
+}
+
+.icon-insta
+{
+  position:relative;
+  top: 45px;
+  right:300px;
+  transform: scale(1.1); 
+} 
+
+.icon-discord
+{
+  position:relative;
+  top: -8px;
+  right: 225px;
+  transform: scale(1.1); 
+}
+
+.icon-meta
+{
+  position:relative;
+  top: -60px;
+  right: 150px;
+  transform: scale(1.1); 
+}
+
+.Second-page
+{
+  background-color: #6A5ACD; /* Purple background color */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF; /* White text color */
+  height: 100%;
+  width:100%;
+  min-height: 100vh;
+  padding:10%;
+}
+
+.Photo1
+{
+  margin-left: 330px;
+  position: absolute;
+  margin-top: 75px;
+}
+
+.wrapper
+{
+  display: inline-flex;
+}
+
+.wrapper .static-txt
+{
+  font-size: 45px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-left: 170px;
+}
+
+.wrapper .dynamic-texts
+{
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.dynamic-texts li{
+  list-style: none;
+  font-size: 45px;
+  font-weight: 500;
+  color: black;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4)infinite;
+}
+
+@keyframes slide
+{
+  100%
+  {
+    top:-360px;
+  }
+}
+.dynamic-texts li span
+{
+  position: relative;
+}
+.dynamic-texts li span::after
+{
+  content:"";
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background: #6A5ACD;
+  left: 0;
+  border-left: 2px solid black;
+  animation: typing 1.5s steps(10)infinite;
+}
+
+@keyframes typing
+{
+  100%
+  {
+    left:100%;
+    margin:0 -35px 0 35px;
+  }
+}
+
+.down
+{
+  font-size: 38px;
+  margin-left: 170px;
+  margin-top: 10px;
+}
+
+.b
+{
+  font-size: 45px;
+  margin-left: 10px;
+  color: #242526;
+}
+
+.Third-page
+{
+  background-color: #242526;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width:100%;
+  min-height: 100vh;
+}
+
+.Con 
+{
+  font-size: 45px;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-left: 170px;
+}
+
+.Final-page {
+  background-color:#58629b;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width:100%;
+  min-height: 100vh;
+}
+
+.footer
+{
+  color: #fff;
+  margin-left: 600px;
+  position: absolute;
+  margin-top: 710px;
+  font-size: 25px;
+}
